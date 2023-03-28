@@ -4,31 +4,33 @@ $categorias = [];
 $categorias[] = 'infantil';
 $categorias[] = 'adolescente';
 $categorias[] = 'adulto';
+$categorias[] = 'idoso';
 
 //print_r($categorias);
 
 $nome = $_POST['nome'];
 $idade = $_POST['idade'];
 
-if(empty($nome))
+if(empty($nome)) // Verifica se a variavel é vazia
 {
 	echo "O nome não pode ser vazio";
 	return;
 }
-if (strlen($nome) < 3)
+if (strlen($nome) < 3) // strlen = conta o número de caracteres de uma string
 {
 	echo 'O nome deve conter mais que 3 caracteres';
 	return;	
 }
 
-if (strlen($nome) > 40)
+if (strlen($nome) > 40) // O nome não pode ser muito extenso
 {
 	echo "O nome não pode ser muito extenso";
 	return;
 }
 
-if (!is_numeric($idade)) {
+if (!is_numeric($idade)) {  // is_numeric = 
 	echo 'Informe um numero para idade';
+	return;
 }
 //var_dump($nome);
 //var_dump($idade);
