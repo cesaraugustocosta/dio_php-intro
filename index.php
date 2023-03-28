@@ -21,9 +21,10 @@
 		//		echo $mensagemErro;
 		//	}
 		//?>
-		<p>Seu Nome - Your Name: <input type="text" name="nome"></p>
-		<p>Sua Idade - Your Age: <input type="text" name="idade"></p>
+		<p>Seu Nome (Your Name): <input type="text" name="nome"></p>
+		<p>Sua Idade (Your Age): <input type="number" name="idade"></p>
 		<p><input type="submit" value="Enviar dados do Competidor"></p>
+		
 	</form>
 </body>
 </html>	
